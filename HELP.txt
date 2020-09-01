@@ -1,0 +1,60 @@
+Modules:
+---------
+1. Client
+
+2. Metadata Servers
+
+3. Storage Servers (1 & 2)
+
+--------------
+1. Client
+---------
+
+* Registration
+
+* Login
+
+* Upload Files: Files are stored into database
+
+* Split Files : View uploaded Files, Split into twoparts, encrypt and upload to two cloud (DriveHQ)
+
+* Modify Cloud1 Data : Calculate Jaccard Similarity (Comapre to cloud2 data and cloud1 data)
+
+* Modify Cloud2 Data : Calculate Jaccard Similarity (Comapre to cloud1 data and cloud2 data)
+
+* Request : View Uploaded files request, request sent to Storage Servers1 and Storage Server2
+
+* Download : Receive two keys from Storage Servers1 and Storage Server2, Verify two keys and download
+
+--------------------
+2. Metadata Servers
+-------------------
+
+* Login
+
+* View Cloud1 Files
+
+* View Cloud2 Files
+
+----------------------
+3. Storage Servers1
+----------------------
+
+* Login
+
+* View Cloud1 Files
+
+* View Client file download requests and send cloud1 key
+
+----------------------
+3. Storage Servers2
+---------------------
+
+* Login
+
+* View Cloud2 Files
+
+* View Client file download requests and send cloud2 key
+
+
+
